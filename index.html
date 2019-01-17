@@ -314,7 +314,9 @@ In 2019, there will be an estimated 1.76 M new cancer cases diagnosed and 606K c
                     <a class="fa fa-phone fa-3x wow bounceIn"></i>
                 </div-->
                 <div class="col-lg-2 text-center">
-                    <a href="mailto:mpavlenk@uci.edu?subject=Hello&body=Dear" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s">Send me an email</a>
+                <asp:LinkButton runat="server" ID="btnEmail" Text="Email"
+    OnClientClick="window.open('mailto:mpavlenk@uci.edu?Subject=hello','email');" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s">
+</asp:LinkButton>
                 </div>
             </div>
         </div>
